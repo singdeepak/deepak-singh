@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -35,11 +35,11 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <span className="text-sm font-medium">Connect</span>
             <div className="flex gap-4 mt-1">
-              <a href="https://github.com/yourusername" target="_blank">
-                {/* <Github className="w-5 h-5 hover:opacity-70" /> */} Github
+              <a href="https://github.com/singdeepak" target="_blank">
+                <FiGithub className="w-5 h-5 hover:text-foreground transition cursor-pointer" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank">
-                {/* <Linkedin className="w-5 h-5 hover:opacity-70" /> */} Linkedin
+              <a href="https://www.linkedin.com/in/deepaksing/" target="_blank">
+                <FiLinkedin className="w-5 h-5 hover:text-foreground transition cursor-pointer" />
               </a>
             </div>
           </div>

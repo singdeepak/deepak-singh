@@ -17,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/#projects" },
+    { name: "Gallery", href: "/#gallery" },
     { name: "About", href: "/#about" },
     { name: "Contact", href: "/#contact" },
   ];
@@ -68,7 +69,17 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                <Button className="mt-4">Hire Me</Button>
+                  <div className="mt-4 relative z-10">
+                    <Button asChild>
+                      <a
+                        href="https://wa.me/919876543210?text=Hi%20Deepak%2C%20I%20am%20interested%20in%20hiring%20you."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Hire Me
+                      </a>
+                    </Button>
+                  </div>
               </div>
             </SheetContent>
           </Sheet>
